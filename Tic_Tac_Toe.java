@@ -1,7 +1,7 @@
-package Tic_Tac_Toe;
+package Tic_Tac_Toe_console_Application;
 
 import java.util.Scanner;
-import Tic_Tac_Toe.*;
+import Tic_Tac_Toe_console_Application.*;
 
 class Printing {
     public static void prt(char a[][]) {
@@ -47,21 +47,6 @@ class Checking_win_or_not {
         if (a[0][0] == k && a[1][1] == k && a[2][2] == k)
             return 1;
         if (a[0][2] == k && a[1][1] == k && a[2][0] == k)
-            return 1;
-        return 0;
-    }
-}
-
-class Draw_or_not // checking for draw or not
-{
-    public static int check(char[][] a) {
-        int flag = 0;
-        for (int i = 0; i < 3; i++)
-            for (int j = 0; j < 3; j++)
-                if (Character.isDigit(a[i][j]))
-                    flag = 1;
-
-        if (flag == 1)
             return 1;
         return 0;
     }
