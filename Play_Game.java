@@ -1,9 +1,9 @@
 package Tic_Tac_Toe_console_Application;
 
 import java.util.Scanner;
-//import Tic_Tac_Toe_console_Application.*;
+import Tic_Tac_Toe_console_Application.*;
 
-class Play_Game extends Printing {
+public class Play_Game extends Printing {
     public static void assign(char arr[][]) {
         int t = 1;
         for (int i = 0; i < arr.length; i++) {
